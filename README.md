@@ -6,13 +6,22 @@
 
 An async Python client library for Empire's RESTful API 
 
-(Only works with [BC-Security Empire fork](https://github.com/BC-SECURITY/Empire))
+(Only works with the [BC-Security Empire fork](https://github.com/BC-SECURITY/Empire))
+
+## Table of Contents
+
+* [Utinni](#utinni)
+  + [Installing](#installing)
+  + [Examples](#examples)
+  + [FAQ](#faq)
 
 ## Installing
 
 `pip3 install utinni`
 
 ## Examples
+
+See the [examples](/../master/src/examples) folder for more.
 
 Simple example showing basic usage:
 
@@ -113,4 +122,8 @@ This was originally made for the [DeathStar](https://github.com/byt3bl33d3r/Deat
 
 **2. Why are there no sync APIs?**
 
-Cause it doesn't make sense. 99% of all use cases you're going to want to call/execute/query/do multiple things at the same time.
+Cause it doesn't make sense. In 99% of all use cases you'd use this, you're going to want to call/execute/query/do multiple things at the same time.
+
+**3. Will this work with the original Empire repository and not the BC-Security Fork?**
+
+Probably not. You're welcome to try though.
