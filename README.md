@@ -4,7 +4,9 @@
 
 # Utinni
 
-An async Python client library for Empire's RESTful API (Only works with [BC-Security Empire fork](https://github.com/BC-SECURITY/Empire))
+An async Python client library for Empire's RESTful API 
+
+(Only works with [BC-Security Empire fork](https://github.com/BC-SECURITY/Empire))
 
 ## Installing
 
@@ -90,7 +92,7 @@ async def main():
     await empire.listeners.create(listener_type="http", name="Utinni", additional={"Port": 8443})
 
     # Start the 'agent_poller' coroutine as a background task 
-    agent_poller_task = asyncio.create_task(agent_poller(empire)
+    agent_poller_task = asyncio.create_task(agent_poller(empire))
 
     # Do more stuff here as this thread isn't blocked.
     available_empire_modules = await empire.modules.get()

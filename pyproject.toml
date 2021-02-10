@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "utinni"
 version = "0.5.0"
-description = ""
+description = "Async client library for Empire's RESTful API "
 authors = ["Marcello Salvati <byt3bl33d3r@pm.me>"]
 readme = "README.md"
-homepage = "https://github.com/byt3bl33d3r/utinni"
-repository = "https://github.com/byt3bl33d3r/utinni"
+homepage = "https://github.com/byt3bl33d3r/Utinni"
+repository = "https://github.com/byt3bl33d3r/Utinni"
 exclude = ["tests"]
 include = ["LICENSE"]
 license = "GPL-3.0-only"
