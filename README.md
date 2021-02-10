@@ -8,7 +8,15 @@ An async Python client library for Empire's RESTful API
 
 (Only works with the [BC-Security Empire fork](https://github.com/BC-SECURITY/Empire))
 
-## Table of Contents
+# Sponsors
+[<img src="https://www.blackhillsinfosec.com/wp-content/uploads/2016/03/BHIS-logo-L-300x300.png" width="130" height="130"/>](https://www.blackhillsinfosec.com/)
+[<img src="https://handbook.volkis.com.au/assets/img/Volkis_Logo_Brandpack.svg" width="130" hspace="10"/>](https://volkis.com.au)
+[<img src="https://user-images.githubusercontent.com/5151193/85817125-875e0880-b743-11ea-83e9-764cd55a29c5.png" width="200" vspace="21"/>](https://qomplx.com/blog/cyber/)
+[<img src="https://user-images.githubusercontent.com/5151193/86521020-9f0f4e00-be21-11ea-9256-836bc28e9d14.png" width="250" hspace="20"/>](https://ledgerops.com)
+[<img src="https://user-images.githubusercontent.com/5151193/102297674-e6d7ec80-3f0c-11eb-982f-cc5d13b0e9ce.jpg" width="250" hspace="20"/>](https://www.guidepointsecurity.com/)
+[<img src="https://user-images.githubusercontent.com/5151193/95542303-a27f1c00-09b2-11eb-8682-e10b3e0f0710.jpg" width="200" hspace="20"/>](https://lostrabbitlabs.com/)
+
+# Table of Contents
 
 * [Utinni](#utinni)
   + [Installing](#installing)
@@ -120,9 +128,9 @@ asyncio.run(main())
 
 This was originally made for the [DeathStar](https://github.com/byt3bl33d3r/DeathStar) project, the author then realized it would be useful as a stand-alone library.
 
-**2. Why are there no sync APIs?**
+**2. Why doesn't this library provide a sync APIs?**
 
-Cause it doesn't make sense. In 99% of all use cases you'd use this, you're going to want to call/execute/query/do multiple things at the same time.
+Cause it doesn't make sense. In 99% of all use cases you're going to want to call/execute/query/do multiple things at the same time. This is legitimately the perfect use case of AsyncIO.
 
 **3. Will this work with the original Empire repository and not the BC-Security Fork?**
 
