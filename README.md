@@ -128,7 +128,7 @@ asyncio.run(main())
 
 This was originally made for the [DeathStar](https://github.com/byt3bl33d3r/DeathStar) project, the author then realized it would be useful as a stand-alone library.
 
-**2. Why doesn't this library provide a sync APIs?**
+**2. Why doesn't this library provide a sync API?**
 
 Cause it doesn't make sense. In 99% of all use cases you're going to want to call/execute/query/do multiple things at the same time. This is legitimately the perfect use case of AsyncIO.
 

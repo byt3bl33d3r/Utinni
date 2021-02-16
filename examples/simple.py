@@ -17,7 +17,7 @@ async def main():
         # Poll for new agents every 1 sec
         for agent in await empire.agents.get():
 
-            #Print some basic info on the new agent
+            # Print some basic info on the new agent
             print(f"+ New agent '{agent.name}' connected: {agent.domain}\\{agent.username}")
 
             # Execute a module on the agent

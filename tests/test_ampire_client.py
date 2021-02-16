@@ -1,3 +1,7 @@
+"""
+These test assume you have at least 1 agent connected to empire!
+"""
+
 import pytest
 
 @pytest.mark.asyncio
