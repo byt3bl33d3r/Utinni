@@ -22,4 +22,4 @@ COPY . .
 
 RUN pip3 install .
 
-WORKDIR /home/$USER/
+WORKDIR /home/$USER/src/utinni

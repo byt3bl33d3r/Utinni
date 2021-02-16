@@ -31,7 +31,7 @@ Via Pip:
 
 Docker image:
 
-- `docker push byt3bl33d3r/utinni`
+- `docker pull byt3bl33d3r/utinni`
 
 ## Examples
 
