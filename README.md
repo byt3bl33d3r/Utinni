@@ -25,7 +25,13 @@ An async Python client library for Empire's RESTful API
 
 ## Installing
 
-`pip3 install utinni`
+Via Pip:
+
+- `pip3 install utinni`
+
+Docker image:
+
+- `docker push byt3bl33d3r/utinni`
 
 ## Examples
 
