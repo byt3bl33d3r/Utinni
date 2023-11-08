@@ -3,6 +3,8 @@ These test assume you have at least 1 agent connected to empire!
 """
 
 import pytest
+from conftest import beautify_json
+
 
 @pytest.mark.asyncio
 async def test_listeners(empire):

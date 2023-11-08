@@ -1,8 +1,9 @@
 import pytest
+import pytest_asyncio
 import os
 import logging
 import json
-from utinni import EmpireApiClient, EmpireModuleExecutionTimeout
+from utinni import EmpireApiClient
 
 handler = logging.StreamHandler()
 handler.setFormatter(logging.Formatter("[%(name)s] %(levelname)s - %(message)s"))
@@ -11,11 +12,13 @@ log = logging.getLogger("utinni")
 log.setLevel(logging.DEBUG)
 log.addHandler(handler)
 
+
 def beautify_json(obj) -> str:
     return "\n" + json.dumps(obj, sort_keys=True, indent=4, separators=(",", ": "))
 
+
 @pytest.mark.asyncio
-@pytest.fixture
+@pytest_asyncio.fixture
 async def empire():
     empire = EmpireApiClient(
         host=os.environ.get("EMPIRE_HOST") or "localhost",
@@ -28,8 +31,9 @@ async def empire():
     )
     yield empire
 
+
 @pytest.mark.asyncio
-@pytest.fixture
+@pytest_asyncio.fixture
 async def agents(empire):
     agents = await empire.agents.get()
     yield agents
